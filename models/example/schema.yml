@@ -19,3 +19,9 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: article_counts_by_date
+    description: "number of articles collected each day"
+    columns:
+      - name: date
+      - name: article_count
