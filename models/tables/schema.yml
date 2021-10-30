@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: article_counts_by_date
+    description: "number of articles collected each day"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null
+      - name: article_count
+        tests:
+          - not_null

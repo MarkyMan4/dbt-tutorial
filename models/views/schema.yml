@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: high_article_counts
+    description: "dates where 5 or more articles were collected"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null
+      - name: article_count
+        tests:
+          - not_null
+
