@@ -13,3 +13,9 @@ models:
         tests:
           - not_null
 
+  - name: count_by_topic
+    description: "article counts for each topic"
+    columns:
+      - name: topic_name
+      - name: article_count
+

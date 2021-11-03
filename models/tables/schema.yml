@@ -11,3 +11,18 @@ models:
       - name: article_count
         tests:
           - not_null
+
+  - name: article_info
+    description: "consolidated info about articles that can be used for analysis"
+    columns:
+      - name: article_id
+        tests:
+          - unique
+          - not_null
+      - name: headline
+      - name: date_published
+      - name: sentiment
+      - name: subjectivity
+      - name: topic
+      - name: keywords
+      - name: topic_name
