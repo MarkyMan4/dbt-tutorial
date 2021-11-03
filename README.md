@@ -17,3 +17,6 @@ Try running the following commands:
 ### Documentation
 <code>dbt docs generate</code>
 <code>dbt docs serve</code>
+
+### Seed database with CSVs in the data folder
+<code>dbt seed --full-refresh</code>
